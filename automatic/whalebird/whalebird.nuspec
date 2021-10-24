@@ -1,21 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+  SPDX-FileCopyrightText: © 2020-2021 Nicholas Smith <nsmith@ethosgroup.com>
+  SPDX-FileCopyrightText:  2021 Peter J. Mello <admin@petermello.net>
+
+  SPDX-License-Identifier: Apache-2.0
+-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>whalebird</id>
-    <version>4.4.3</version>
-    <packageSourceUrl>https://github.com/FullofQuarks/chocolatey-packages/tree/master/automatic/whalebird</packageSourceUrl>
+    <version>4.4.5</version>
+    <packageSourceUrl>
+      https://github.com/FullofQuarks/chocolatey-packages/tree/master/automatic/whalebird
+    </packageSourceUrl>
     <owners>FullofQuarks</owners>
     <title>Whalebird</title>
     <authors>h3poteto</authors>
     <projectUrl>https://whalebird.social/</projectUrl>
-    <iconUrl>https://cdn.statically.io/gh/FullofQuarks/chocolatey-packages/master/icons/whalebird.png</iconUrl>
-    <licenseUrl>https://raw.githubusercontent.com/h3poteto/whalebird-desktop/master/LICENSE.txt</licenseUrl>
+    <iconUrl>
+      https://cdn.statically.io/gh/FullofQuarks/chocolatey-packages/master/icons/whalebird.png
+    </iconUrl>
+    <licenseUrl>
+      https://raw.githubusercontent.com/h3poteto/whalebird-desktop/master/LICENSE.txt
+    </licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/h3poteto/whalebird-desktop</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/h3poteto/whalebird-desktop/issues</bugTrackerUrl>
+    <projectSourceUrl>
+      https://github.com/h3poteto/whalebird-desktop
+    </projectSourceUrl>
+    <bugTrackerUrl>
+      https://github.com/h3poteto/whalebird-desktop/issues
+    </bugTrackerUrl>
     <tags>whalebird mastodon pleroma misskey fediverse</tags>
     <summary>Whalebird is a mastodon client for desktop application.</summary>
-    <description>Whalebird is a Mastodon, Pleroma, and Misskey client for desktop application</description>
+    <description>
+      Whalebird is a Mastodon, Pleroma, and Misskey theme-able desktop client
+      with support for multiple accounts of each, built using Electron.
+    </description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
