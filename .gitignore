@@ -1,32 +1,36 @@
+# SPDX-FileCopyrightText: © 2020-2021 Nicholas Smith <nsmith@ethosgroup.com>
+# SPDX-FileCopyrightText:  2021 Peter J. Mello <admin@petermello.net>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+*/working
 *~
 *.bak
 *.cache
+*.code-workspace
+*.exist
+*.handover
+*.new
 *.nupkg
 *.old
 *.orig
-*.swp
-*.swo
+*.resharper
+*.stackdump
 *.suo
+*.swo
+*.swp
 *.test
 *.work
-*.handover
-*.new
-*.exist
 *-orig.*
-Thumbs.db
-.DS_Store
+New folder*/
+.vscode/
+automatic/api_key
 _ReSharper*
-*.resharper
-New folder*
 New Text Document*.txt
+.DS_Store
+Thumbs.db
+Update-AUPackages.md
+api_key
 obj
-*/working
-ketarin/soluto.xml
-*.stackdump
 update_vars.ps1
 update_info.xml
-Update-AUPackages.md
-
-automatic/api_key
-
-api_key

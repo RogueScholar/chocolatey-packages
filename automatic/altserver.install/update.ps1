@@ -1,17 +1,23 @@
+# SPDX-FileCopyrightText: © 2020-2021 Nicholas Smith <nsmith@ethosgroup.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+
 Import-Module AU
 
 $URL = "https://f000.backblazeb2.com/file/altstore/altinstaller.zip"
-$rootDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$toolsDir = Join-Path $rootDir "tools"
-$auToolsDir = Join-Path $PSScriptRoot "tools"
+
+$rootDir                = "$(Split-Path `
+                               -parent $MyInvocation.MyCommand.Definition)"
+$toolsDir               = Join-Path $rootDir "tools"
 $downloadedFileLocation = Join-Path $toolsDir 'AltInstaller.zip'
-$unzippedFile = Join-Path $toolsDir 'AltInstaller.msi'
+$unzippedFile           = Join-Path $toolsDir 'AltInstaller.msi'
 
 function global:au_BeforeUpdate {
-    Invoke-WebRequest -Uri $URL -OutFile $downloadedFileLocation
-    Get-ChocolateyUnzip -FileFullPath $downloadedFileLocation -Destination $toolsDir
-    $res = Get-FileHash $unzippedFile -Algorithm sha512
-    $Latest.Checksum32 = $res.Hash.ToLower()
+  Invoke-WebRequest -Uri $URL -OutFile $downloadedFileLocation
+  Get-ChocolateyUnzip -FileFullPath $downloadedFileLocation `
+                      -Destination $toolsDir
+  $res = Get-FileHash $unzippedFile -Algorithm sha512
+  $Latest.Checksum32 = $res.Hash.ToLower()
 }
 
 function global:au_SearchReplace {
