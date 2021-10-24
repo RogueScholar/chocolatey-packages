@@ -5,58 +5,28 @@
   SPDX-FileCopyrightText:  2021 Peter J. Mello <admin@petermello.net>
 
   SPDX-License-Identifier: Apache-2.0
-
-[Update status][update-gist]
--->
+-->[![Update status][gist-badge]][update-gist]
 [![AppVeyor Status Badge][appveyor-badge]][appveyor-page]
 
-This repository contains Chocolatey packages that are (mostly) automatically
-maintained. The automatic update process is handled by
-[AU (Automatic Updater)][choco-au], a supported tool in the Chocolatey community
-for automatic packaging.
+This repository contains [Chocolatey packages][comm-repo] that are (mostly)
+[automatically maintained][auto-pkgs]. The automatic update process is handled
+by the [AU (Automatic Updater)][choco-au] PowerShell module, a supported tool in
+the Chocolatey community for automatic packaging.
 
 ## Packages
 
-- [![Chocolatey package][altserver-badge]][altserver-choco]
-  ([**`altserver`**][altserver]) /
-  [![Chocolatey package][altserver.install-badge]][altserver.install-choco]
-  ([**`altserver.install`**][altserver.install]): [AltStore][altstore] is a home
-  for apps that push the boundaries of iOS; no jailbreak required.
-- [![Chocolatey package][coolterm-badge]][coolterm-choco]
-  ([**`coolterm`**][coolterm]): [CoolTerm][coolterm-web] is a simple serial port
-  terminal application (no terminal emulation) written in Xojo that is geared
-  towards hobbyists and professionals with a need to exchange data with hardware
-  connected to serial ports such as servo controllers, robotic kits, GPS
-  receivers, micro-controllers, etc.
-- [![Chocolatey package][hledger-badge]][hledger-choco]
-  ([**`hledger`**][hledger]): [hledger][hledger-web] is free, cross-platform
-  accounting software for both power users and folks new to accounting. It's
-  good for tracking money, time, investments, cryptocurrencies, inventory and
-  more, with high accuracy, flexibility and privacy.
-- [![Chocolatey package][hyperspace-badge]][hyperspace-choco]
-  ([**`hyperspace`**][hyperspace]): [Hyperspace][hyperspace-web] is the next
-  generation of the fluffiest client for the Fediverse (Mastodon, et al.).
-- [![Chocolatey package][ledger-badge]][ledger-choco] ([**`ledger`**][ledger]):
-  [Ledger][ledger-web] is a powerful, double-entry accounting system that is
-  accessed from the POSIX command line.
-- [![Chocolatey package][openhardwaremonitor-badge]][openhardwaremonitor-choco]
-  ([**`openhardwaremonitor`**][openhardwaremonitor]): The
-  [Open Hardware Monitor][openhardwaremonitor-web] is free, open source software
-  that monitors the temperature sensors, fan speeds, voltages, load and clock
-  speeds of a computer.
-- [![Chocolatey package][thedesk-badge]][thedesk-choco]
-  ([**`thedesk`**][thedesk]) /
-  [![Chocolatey package][thedesk.portable-badge]][thedesk.portable-choco]
-  ([**`thedesk.portable`**][thedesk.portable]): [TheDesk][thedesk-web] is a
-  power client for the Fediverse (Mastodon, et al.) in the style of Tweetdeck's
-  feature set for highly customized interactions with Twitter. It has built-in
-  support for unique aspects of several Fediverse instances that cater to East
-  Asian users while remaining capable of connecting to them all and is in highly
-  active development.
-- [![Chocolatey package][whalebird-badge]][whalebird-choco]
-  ([**`whalebird`**][whalebird]): [Whalebird][whalebird-web] is a Mastodon,
-  Pleroma, and Misskey theme-able desktop client with support for multiple
-  accounts of each, built using Electron.
+|   Icon   |       Package       |                 Description                 |
+|----------|---------------------|---------------------------------------------|
+|[<img src="https://cdn.statically.io/gh/RogueScholar/chocolatey-packages/master/icons/altserver.png" width="32" height="32" />][altserver]|[![Chocolatey package: altserver][altserver-badge]][altserver-choco]|[AltStore][altstore] is a home for apps that push the boundaries of iOS; no jailbreak required.|
+|[<img src="https://cdn.statically.io/gh/RogueScholar/chocolatey-packages/master/icons/altserver.png" width="32" height="32" />][altserver.install]|[![Chocolatey package: altserver.install][altserver.install-badge]][altserver.install-choco]|[AltStore][altstore] is a home for apps that push the boundaries of iOS; no jailbreak required.|
+|[<img src="https://cdn.statically.io/gh/RogueScholar/chocolatey-packages/master/icons/coolterm.png" width="32" height="32" />][coolterm]|[![Chocolatey package: coolterm][coolterm-badge]][coolterm-choco]|[CoolTerm][coolterm-web] is a simple serial port terminal application (no terminal emulation) written in Xojo that is geared towards hobbyists and professionals with a need to exchange data with hardware connected to serial ports such as servo controllers, robotic kits, GPS receivers, micro-controllers, etc.|
+|[<img src="https://cdn.statically.io/gh/RogueScholar/chocolatey-packages/master/icons/hledger.png" width="32" height="32" />][hledger]|[![Chocolatey package: hledger][hledger-badge]][hledger-choco]|[hledger][hledger-web] is free, cross-platform accounting software for both power users and folks new to accounting. It's good for tracking money, time, investments, cryptocurrencies, inventory and more, with high accuracy, flexibility and privacy.|
+|[<img src="https://cdn.statically.io/gh/RogueScholar/chocolatey-packages/master/icons/hyperspace.png" width="32" height="32" />][hyperspace]|[![Chocolatey package: hyperspace][hyperspace-badge]][hyperspace-choco]|[Hyperspace][hyperspace-web] is the next generation of the fluffiest client for the Fediverse (Mastodon, et al.).|
+|[**`ledger`**][ledger]|[![Chocolatey package: ledger][ledger-badge]][ledger-choco]|[Ledger][ledger-web] is a powerful, double-entry accounting system that is accessed from the POSIX command line.|
+|[<img src="https://cdn.statically.io/gh/RogueScholar/chocolatey-packages/master/icons/openhardwaremonitor.png" width="32" height="32" />][openhardwaremonitor]|[![Chocolatey package: openhardwaremonitor][openhardwaremonitor-badge]][openhardwaremonitor-choco]|The [Open Hardware Monitor][openhardwaremonitor-web] is free, open source software that monitors the temperature sensors, fan speeds, voltages, load and clock speeds of a computer.|
+|[<img src="https://cdn.statically.io/gh/RogueScholar/chocolatey-packages/master/icons/thedesk.png" width="32" height="32" />][thedesk]|[![Chocolatey package: thedesk][thedesk-badge]][thedesk-choco]|[TheDesk][thedesk-web] is a power client for the Fediverse (Mastodon, et al.) in the style of Tweetdeck's feature set for highly customized interactions with Twitter. It has built-in support for unique aspects of several Fediverse instances that cater to East Asian users while remaining capable of connecting to them all and is in highly active development.|
+|[<img src="https://cdn.statically.io/gh/RogueScholar/chocolatey-packages/master/icons/thedesk.png" width="32" height="32" />][thedesk.portable]|[![Chocolatey package: thedesk.portable][thedesk.portable-badge]][thedesk.portable-choco]|[TheDesk][thedesk-web] is a power client for the Fediverse (Mastodon, et al.) in the style of Tweetdeck's feature set for highly customized interactions with Twitter. It has built-in support for unique aspects of several Fediverse instances that cater to East Asian users while remaining capable of connecting to them all and is in highly active development.|
+|[<img src="https://cdn.statically.io/gh/RogueScholar/chocolatey-packages/master/icons/whalebird.png" width="32" height="32" />][whalebird]|[![Chocolatey package: whalebird][whalebird-badge]][whalebird-choco]|[Whalebird][whalebird-web] is a Mastodon, Pleroma, and Misskey theme-able desktop client with support for multiple accounts of each, built using Electron.|
 
 ## Folder Structure
 
@@ -80,23 +50,8 @@ For setting up your own automatic package repository, please see
 - PowerShell v5+.
 - The [AU module][choco-au].
 
-For daily operations check out the AU packages
+For daily operations, check out the AU packages
 [template README][template-readme].
-
-### Recommendation on Auto Packaging
-
-AU provides more in the process of being completely automated, sending emails
-when things go wrong, and providing a nice report at the end. It doesn't have a
-bolt-on feeling to it that you see with Ketarin / ChocolateyPackageUdater,
-however the one thing it does lack in comparison is no visual feedback to seeing
-how searches for installers may be found. Other than that, it provides errors
-when things go wrong, where Ketarin doesn't consider anything that happens
-during "before run"/"post run updates" (where chocopkgup and checksumming occur)
-to be an error, even if those scripts error.
-
-So for best visibility, enjoying the ease of using AppVeyor, and for a nice
-report of results, we recommend AU over Ketarin. You also don't need to deal
-with templates as AU works directly with the xml/ps1 files to do replacement.
 
 ### Adapting your current source repository to this source repository template
 
@@ -117,46 +72,12 @@ attention to the setup folder.
 1. Inspect the following file and add the differences:
    - `.gitignore`
 
-### Use Both Methodologies
-
-The way this source repository is designed, you can use both AU and
-Ketarin/ChocolateyPackageUpdater together. This is especially helpful when
-migrating existing packages from one methodology to the other.
-
-### Migrating existing Ketarin packages to AU
-
-1. Add an update.ps1 to the package folder and determine how to update the
-   package using [AU's instructions][au-script].
-1. Remove the ketarin.xml file from the ketarin folder.
-1. Ensure you also remove the package job from Ketarin itself as it doesn't
-   automatically remove.
-
-### Special Notes
-
-#### Ketarin
-
-- In `Settings -> Global variables` the variable `autoPackagesFolder` is used to
-  determine where your automatic packages are. It doesn't matter what
-  `chocopkgup` is using, this folder is passed through. Ensure this is set
-  appropriately.
-- In `Settings -> Global variables` the variable `saveDir` is used to determine
-  where to save the downloaded files from Ketarin. Please ensure the folder
-  exists.
-- In `Settings -> Global variables` the variable `nopush` is set to `--nopush`,
-  which allows checksum calculations to occur and then a custom script will push
-  the files.
-- In `Settings -> Global variables` the variable `cscript` is set to `2`, which
-  means calculate checksums, rebuild, and push the packages. If you set this to
-  `1` it will do everything except push the packages. Setting this to `1` is how
-  you disable package pushing.
-- In `Settings -> Global variables` the variable `checksum` is set to
-  `{checksum}`. Do not change this, this is how the post update script replaces
-  the literal value `{checksum}`. The same goes for `checksumx64`,
-  `packageGuid`, and `url64`.
-
 [appveyor-badge]: https://ci.appveyor.com/api/projects/status/github/FullofQuarks/chocolatey-packages?svg=true
 [appveyor-page]: https://ci.appveyor.com/project/FullofQuarks/chocolatey-packages
-[update-gist]: https://gist.github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GIST_ID
+[gist-badge]: https://img.shields.io/static/v1?label=Update%20Status&message=Gist&color=informational&logo=githubactions&style=for-the-badge
+[comm-repo]: https://community.chocolatey.org/packages
+[auto-pkgs]: https://chocolatey.org/docs/automatic-packages
+[update-gist]: https://gist.github.com/RogueScholar/cb46f73c4b1e8e9ff5a6bc0cade5657e
 [choco-au]: https://chocolatey.org/packages/au
 [altserver]: automatic/altserver/altserver.nuspec
 [altserver-badge]: https://img.shields.io/chocolatey/v/altserver?color=seagreen&include_prereleases&label=altserver&logo=chocolatey&style=for-the-badge
@@ -202,4 +123,3 @@ migrating existing packages from one methodology to the other.
 [dir-ops]: tools
 [choco-autopkg]: https://docs.chocolatey.org/en-us/create/automatic-packages
 [template-readme]: https://github.com/majkinetor/au-packages-template/blob/master/README.md
-[au-script]: https://github.com/majkinetor/au#creating-the-package-updater-script

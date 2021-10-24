@@ -5,18 +5,6 @@
 
 # Global text detection and EOL normalization
 *                                     text=auto
-# Python source code files
-*.py                                  text diff=python
-*.py3                                 text diff=python
-*.pyi                                 text diff=python
-*.pyw                                 text diff=python
-*.pyx                                 text diff=python
-*.pyz                                 text diff=python
-*.pxd                                 text diff=python
-# Python bytecode binary files
-*.pyc                                 binary export-ignore
-*.pyo                                 binary export-ignore
-*.pyd                                 binary
 # Archive files
 *.7z                                  -text diff=lfs filter=lfs merge=lfs
 *.bz2                                 -text diff=lfs filter=lfs merge=lfs
@@ -47,6 +35,8 @@
 *.svgz                                -text diff=lfs filter=lfs merge=lfs
 *.{[tT][iI]}{[fF],[fF][fF]}           -text diff=lfs filter=lfs merge=lfs
 *.web{[mp]}                           -text diff=lfs filter=lfs merge=lfs
+# Installers
+*.msi                                 -text diff=lfs filter=lfs merge=lfs
 # Patches (preserve line endings)
 *.patch                               -text
 # Serialization
@@ -59,23 +49,19 @@
 ## Windows
 *.{bat,[bB][aA][tT]}                  text eol=crlf
 *.{cmd,[cC][mM][dD]}                  text eol=crlf
-*.{ps1,[pP][sS]1}                     text eol=crlf working-tree-encoding=UTF-16LE-BOM
+*.{ps1,[pP][sS]1}                     text eol=crlf diff=localizablestrings working-tree-encoding=UTF-16LE-BOM
 # Web
 *.css                                 text diff=css
 *.html                                text diff=html
 # Excluded from archives
 *.license                             text export-ignore
-*rc                                   text export-ignore
 .*ignore                              text export-ignore
+*rc                                   text export-ignore
 .editorconfig                         text export-ignore
 .gitattributes                        text export-ignore
 .pre-commit-config.yaml               text export-ignore diff=dyff
-.prospector.yaml                      text export-ignore diff=dyff
-.style.yapf                           text export-ignore
 asciidoctor.css                       text export-ignore
 bootstrap_superhero.min.css           text export-ignore
 bug_report.md                         text export-ignore diff=markdown
-codeql-analysis.yml                   text export-ignore diff=dyff
 feature_request.md                    text export-ignore diff=markdown
-tox.ini                               text export-ignore
 ./icons/*.png !text !filter !merge !diff
