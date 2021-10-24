@@ -1,27 +1,34 @@
-## Automatic Folder
+# Automatic Folder
 
-This is where you put your Chocolatey packages that are automatically packaged up by either [AU](https://chocolatey.org/packages/au) or [Ketarin](https://chocolatey.org/packages/ketarin)/[ChocolateyPackageUpdater](https://chocolatey.org/packages/chocolateypackageupdater).
+<!--
+  SPDX-FileCopyrightText: © 2020-2021 Nicholas Smith <nsmith@ethosgroup.com>
+  SPDX-FileCopyrightText:  2021 Peter J. Mello <admin@petermello.net>
 
-### Ketarin / ChocolateyPackageUpdater (chocopkgup)
+  SPDX-License-Identifier: Apache-2.0
+-->
 
-You want to drop the actual Ketarin files (job file exports) in the top-level ketarin folder to keep them separate from the packages themselves.
+This is where you put your Chocolatey packages that are automatically packaged
+by [AU][au-module].
 
-The following packages implement this strategy of auto updates:
+## Automatic Updater (AU)
 
-* 1password
-* git.install
+AU keeps packages targeting the latest upstream release without automatic
+package tokens necessary. So you can treat the packages as normal.
 
-There is also an _output folder where the automatic packaging files with tokens to do token replacment and output package files with actual values in this folder. This folder is necessary for chocopkgup to do its work. You can decide whether to commit this set of folders or not. We recommend committing it as it makes it easier to do one off fixes and contributors to submit fixes for a package.
+Execute `update_all.ps1` in the repository root to run AU updater with default
+options.
 
-### Automatic Updater (AU)
+To fully setup all the features, make sure you perform the steps listed in
+[setup/README.md][setup-readme] from the
+[chocolatey-packages-template repository][cpt-repo].
 
-AU works with packages without automatic package tokens necessary. So you can treat the packages as normal.
+To get the packages that implement AU updater run `Get-AUPackages` (or its
+alias, `lsau`) in this directory.
 
-Execute `update_all.ps1` in the repository root to run [AU](https://chocolatey.org/packages/au) updater with default options. 
+| :information_source: **NOTE:** :information_source: |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ensure when you are creating packages for AU, you don't use `--auto` as the packaging files should be normal packages. AU doesn't need the tokens to do replacement. |
 
-To fully setup all the features ensure you perform the steps in the [setup/README.md](https://github.com/chocolatey/chocolatey-packages-template/blob/master/setup/README.md#automatic-updater-au)
-
-To get the packages that implement AU updater run `Get-AUPackages` or `lsau` in this directory.
-
-**NOTE:** Ensure when you are creating packages for AU, you don't use `--auto` as the packaging files should be normal packages. AU doesn't need the tokens to do replacement.
-
+[au-module]: https://chocolatey.org/packages/au
+[cpt-repo]: https://github.com/chocolatey/chocolatey-packages-template
+[setup=readme]: https://github.com/chocolatey/chocolatey-packages-template/blob/master/setup/README.md#automatic-updater-au
