@@ -1,34 +1,43 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?><!--
+  SPDX-FileCopyrightText: © 2020-2021 Nicholas Smith <nsmith@ethosgroup.com>
+  SPDX-FileCopyrightText:  2021 Peter J. Mello <admin@petermello.net>
+
+  SPDX-License-Identifier: Apache-2.0
+-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>coolterm</id>
-    <version>1.8.0</version>
+    <version>1.9.0</version>
+    <packageSourceUrl>https://github.com/FullofQuarks/chocolatey-packages/tree/master/automatic/coolterm/</packageSourceUrl>
     <owners>FullofQuarks</owners>
     <title>CoolTerm</title>
     <authors>Roger Meier</authors>
     <projectUrl>https://freeware.the-meiers.org/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/FullofQuarks/chocolatey-packages/master/icons/coolterm.png</iconUrl>
-    <copyright>Copyright (c) 2007-2020 Roger Meier</copyright>
-    <tags>coolterm console serial emulator</tags>
-    <summary>CoolTerm is an easy-to-use terminal for communication with hardware connected to serial ports.</summary>
-    <description>CoolTerm is a simple serial port terminal application (no terminal emulation) that is geared towards hobbyists and professionals with a need to exchange data with hardware connected to serial ports such as servo controllers, robotic kits, GPS receivers, microcontrollers, etc.
-The features of CoolTerm include:
-- Capability of multiple concurrent connections if multiple serial ports are available.
-- Display of received data in plain text or hexadecimal format.
-- Special character handling.
-- Sending data via keypresses as well as a "Send String" dialog that supports data entry in plain text or hexadecimal format.
-- Sending data via copy-paste of text into the terminal window.
-- Sending of text files via dialog or drag-and-drop.
-- Capability of capturing received data to text/binary files.
-- Local echo of transmitted data.
-- Local echo of received data (loop back to sender).
-- Hardware (CTS, DTR) and software flow control (XON).
-- Visual line status indicators.
-- Capability of manually toggling line states of certain handshaking signals when hardware flow control is disabled.
-- Configurable character, line, and packet delays.
-- Capability of saving and retrieving connection options.
-- Scripting.
-- and more...</description>
+    <copyright>© 2007-2021 Roger Meier</copyright>
+    <licenseUrl>http://freeware.the-meiers.org/CoolTerm_ReadMe.txt.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <mailingListUrl>http://the-meiers.org/mailman/listinfo/coolterm-list_the-meiers.org</mailingListUrl>
+    <bugTrackerUrl>http://forums.the-meiers.org/viewforum.php?f=1</bugTrackerUrl>
+    <tags>cable capture com console hardware port serial terminal wired</tags>
+    <summary>CoolTerm is a simple and reliable terminal application for communicating with other devices over serial ports.</summary>
+    <description>CoolTerm is a simple serial port terminal application (no terminal emulation) that is geared towards
+      hobbyists and professionals with a need to exchange data with hardware connected to serial ports such as servo
+      controllers, robotic kits, GPS receivers, micro-controllers, etc. Despite being a simple application for a
+      straight-forward purpose, it offers a wide feature set, some of which are: allowing multiple concurrent
+      connections over multiple serial ports, output display in plain text or hexadecimal, Special character (escape
+      codes, etc.) handling, sending data via copy-paste or drag-and-drop of text into dialog window, packet capturing
+      and recording, echoing sent data locally and/or received data remotely, hardware (CTS, DTR) and software (XON)
+      flow control, configurable character/line/packet delays, scripting and saving connection settings as profiles.</description>
+    <releaseNotes>v1.9.0: 2021-05-31
+      - Add support for transmit macros.
+      - Add option to auto-reconnect to devices that suddenly disappear/reappear while the port stayed open.
+      - Add a plain text option to the selection of capture formats.
+      - Add item under View menu to show current receive buffer level.
+      - Add option to include the port selection and terminal window position/size when saving connection settings as default.
+      - Extend range for custom baud rates, new max is 100,000,000 baud.
+      - Change built-in help docs to use an HTMLViewer control and add hyperlinked table of contents.
+      - Began compiling universal binaries for Intel and ARM-based Macs.</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

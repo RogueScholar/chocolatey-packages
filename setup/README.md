@@ -1,19 +1,19 @@
 # Setup
 
-## Ketarin / ChocolateyPackageUpdater Automatic Packaging
+<!--
+  SPDX-FileCopyrightText: © 2020-2021 Nicholas Smith <nsmith@ethosgroup.com>
+  SPDX-FileCopyrightText:  2021 Peter J. Mello <admin@petermello.net>
 
-* Review `ketarin_setup.ps1` to ensure all items are set appropriately. Uncomment/change anything you need to now.
-* Run `ketarin_setup.ps1`
-* Open ketarin after installing it, open the settings and import `KetarinSettings.xml`.
-* Set up push for Chocolatey community feed with your API key.
-* Ensure `git push` doesn't require credentials.
-* Review `ops/ketarinupdate.cmd` to ensure it is good to go.
-
-**Note**: Use `ops/ketarinupdate.cmd` or similar to schedule updates.
+  SPDX-License-Identifier: Apache-2.0
+-->
 
 ## Automatic Updater (AU)
 
 * Run `au_setup.ps1`.
-* Configure AU [plugins](https://github.com/majkinetor/au/blob/master/Plugins.md).
-* Configure [AppVeyor](https://github.com/majkinetor/au/wiki/AppVeyor).
-* Configure [local run](https://github.com/majkinetor/au/wiki#local-run).
+* Configure AU [plugins][au-plugins].
+* Configure [AppVeyor][appveyor].
+* Configure [local run][local-run].
+
+[au-plugins]: https://github.com/majkinetor/au/blob/master/Plugins.md
+[appveyor]: https://github.com/majkinetor/au/wiki/AppVeyor
+[local-run]: https://github.com/majkinetor/au/wiki#local-run

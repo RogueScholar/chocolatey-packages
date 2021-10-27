@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+  SPDX-FileCopyrightText: © 2020-2021 Nicholas Smith <nsmith@ethosgroup.com>
+  SPDX-FileCopyrightText:  2021 Peter J. Mello <admin@petermello.net>
+
+  SPDX-License-Identifier: Apache-2.0
+-->
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ledger</id>
@@ -8,16 +13,19 @@
     <packageSourceUrl>https://github.com/FullofQuarks/chocolatey-packages/tree/master/automatic/ledger</packageSourceUrl>
     <owners>FullofQuarks, belidzs</owners>
     <licenseUrl>https://www.gnu.org/licenses/bsd.html</licenseUrl>
-    <projectUrl>http://ledger-cli.org/</projectUrl>
+    <projectUrl>https://www.ledger-cli.org/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Ledger is a powerful, double-entry accounting system that is accessed from the UNIX command-line. Ledger, begun in 2003, is written by John Wiegley and released under the BSD license. It has also inspired several ports to other languages.</description>
+    <description>Ledger is a powerful, double-entry accounting system that is
+      accessed from the UNIX command-line. Ledger, begun in 2003, is written by
+      John Wiegley and released under the BSD License. It has also inspired
+      several ports to other languages.</description>
     <summary>A double-entry accounting system</summary>
-    <copyright>Copyright (c) 2003-2020, John Wiegley</copyright>
+    <copyright>Copyright © 2003-2020, John Wiegley</copyright>
     <tags>ledger accounting plaintextaccounting bookkeeping</tags>
     <releaseNotes>https://github.com/ledger/ledger/releases</releaseNotes>
     <projectSourceUrl>https://github.com/ledger/ledger</projectSourceUrl>
-    <docsUrl>http://ledger-cli.org/3.0/doc/ledger3.html</docsUrl>
-    <mailingListUrl>https://groups.google.com/d/forum/ledger-cli</mailingListUrl>
+    <docsUrl>https://www.ledger-cli.org/3.0/doc/ledger3.html</docsUrl>
+    <mailingListUrl>https://groups.google.com/g/ledger-cli</mailingListUrl>
     <bugTrackerUrl>https://github.com/ledger/ledger/issues</bugTrackerUrl>
   </metadata>
   <files>

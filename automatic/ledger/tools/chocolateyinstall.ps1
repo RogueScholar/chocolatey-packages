@@ -1,6 +1,10 @@
-﻿$ErrorActionPreference = 'Stop';
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/FullofQuarks/Windows-Ledger-Binaries/releases/download/v3.2.1/ledger.exe'
+﻿# SPDX-FileCopyrightText: © 2020-2021 Nicholas Smith <nsmith@ethosgroup.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+$ErrorActionPreference = 'Stop';
+$toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url         = 'https://github.com/FullofQuarks/Windows-Ledger-Binaries/releases/download/v3.2.1/ledger.exe'
 $packageName = 'Ledger'
 
 

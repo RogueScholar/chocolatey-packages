@@ -1,21 +1,27 @@
-﻿
-VERIFICATION
-Verification is intended to assist the Chocolatey moderators and community
-in verifying that this package's contents are trustworthy.
- 
-The embedded software have been downloaded from the listed download
-location on https://altstore.io/
-and can be verified by doing the following:
+﻿SPDX-FileCopyrightText: © 2020-2021 Nicholas Smith <nsmith@ethosgroup.com>
+SPDX-FileCopyrightText:  2021 Peter J. Mello <admin@petermello.net>
 
-1. Download the following (as seen on https://altstore.io/):
-  <https://f000.backblazeb2.com/file/altstore/altinstaller.zip>
-2. Unzip the archive
-3. Get the checksum of the MSI file, 'AltInstaller.msi', using one of the following methods:
-  - Using powershell function 'Get-FileHash'
-  - Use chocolatey utility 'checksum.exe'
+SPDX-License-Identifier: Apache-2.0
+
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community in
+verifying that this package's contents are trustworthy.
+
+The embedded software has been downloaded from the listed download location at
+<https://altstore.io/> and can be verified by doing the following:
+
+1. Download the following (as seen on <https://altstore.io/>):
+     <https://cdn.altstore.io/file/altstore/altinstaller.zip>
+2. Unzip the archive.
+3. Get the checksum of the extracted MSI file, 'AltInstaller.msi', using one of
+   the following methods:
+   - Using the PowerShell function 'Get-FileHash'
+   - Using the Chocolatey utility 'checksum.exe'
 4. The checksum should match the following:
 
-  checksum type: sha512
-  checksum: aece725d8d25fc78fa3acf3631c5c8dc0fdc46faea208adf62741a728451495df4bb0103458e0bada40572bf8023abaa7175ad4bdbbcc5538979837134022437
+   checksum type: SHA512
+   checksum: 519df4d6a2eb6cc707f6bea251232c39ea531e529e47544c8c5cde6f071fc3e242006818d6ff21779f258aa17aaf16d1e614d189b0ca818ed1aaa044a7d15f3b
 
-The file 'LICENSE.txt' has been obtained from <https://github.com/rileytestut/AltStore/blob/master/LICENSE>
+The file 'LICENSE.txt' has been obtained from
+<https://github.com/rileytestut/AltStore/blob/master/LICENSE>.

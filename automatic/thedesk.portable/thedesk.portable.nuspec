@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+  SPDX-FileCopyrightText: © 2020-2021 Nicholas Smith <nsmith@ethosgroup.com>
+  SPDX-FileCopyrightText:  2021 Peter J. Mello <admin@petermello.net>
+
+  SPDX-License-Identifier: Apache-2.0
+-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>thedesk.portable</id>
@@ -7,15 +12,17 @@
     <owners>FullofQuarks</owners>
     <title>TheDesk (Portable)</title>
     <authors>Cutls P</authors>
-    <projectUrl>https://thedesk.top</projectUrl>
+    <projectUrl>https://thedesk.top/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/FullofQuarks/chocolatey-packages/master/icons/thedesk.png</iconUrl>
+    <copyright>© 2018-2021 Cutls P</copyright>
     <licenseUrl>https://raw.githubusercontent.com/cutls/TheDesk/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/cutls/TheDesk</projectSourceUrl>
     <bugTrackerUrl>https://github.com/cutls/TheDesk/issues</bugTrackerUrl>
     <tags>thedesk mastodon fediverse</tags>
-    <summary>Mastodon Client for PC</summary>
-    <description>Mastodon Client for PC</description>
+    <summary>Mastodon client for Windows</summary>
+    <description>Mastodon client for Windows</description>
+    <releaseNotes>Add 'Mute' with duration and update dependencies</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

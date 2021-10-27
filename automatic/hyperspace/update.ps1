@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: © 2020-2021 Nicholas Smith <nsmith@ethosgroup.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+
 Import-Module au
 
 $releases = 'https://github.com/hyperspacedev/hyperspace/releases'
